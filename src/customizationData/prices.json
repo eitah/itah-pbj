@@ -2,7 +2,7 @@
   "Signature Sandwich": {
     "PB&J": {
       "In Store": {
-        "base": 3,
+        "baseCost": 3,
         "banana": 1,
         "marshmallow": 0.75,
         "apple": 1,
@@ -12,7 +12,7 @@
         "discount": 0.5
       },
       "Delivery": {
-        "base": 3,
+        "baseCost": 3,
         "banana": 1.5,
         "marshmallow": 1.75,
         "apple": 1.25,
@@ -24,7 +24,7 @@
     },
     "PB Triple Decker": {
       "In Store": {
-        "base": 9,
+        "baseCost": 9,
         "banana": 1,
         "marshmallow": 0.75,
         "apple": 1,
@@ -34,7 +34,7 @@
         "discount": 0.5
       },
       "Delivery": {
-        "base": 9,
+        "baseCost": 9,
         "banana": 1,
         "marshmallow": 0.75,
         "apple": 1,
@@ -46,7 +46,7 @@
     },
     "PB Quad Decker": {
       "In Store": {
-        "base": 12,
+        "baseCost": 12,
         "banana": 1,
         "marshmallow": 0.75,
         "apple": 1,
@@ -56,7 +56,7 @@
         "discount": 0.5
       },
       "Delivery": {
-        "base": 12,
+        "baseCost": 12,
         "banana": 1,
         "marshmallow": 0.75,
         "apple": 1,
@@ -70,13 +70,13 @@
   "Other Sandwich": {
     "Turkey": {
       "In Store": {
-        "base": 6.46,
+        "baseCost": 6.46,
         "bacon": 3,
         "gratuity": 1.2,
         "discount": 0.5
       },
       "Delivery": {
-        "base": 6.46,
+        "baseCost": 6.46,
         "bacon": 3,
         "gratuity": 1.2,
         "discount": 0.5

@@ -71,6 +71,7 @@ export default class View extends React.Component {
   }
 
   render() {
+    const priceList = this.getPriceList();
     return (
       <div className="container-fluid">
         <div className="bg-inverse text-white mb-2">
@@ -104,7 +105,8 @@ export default class View extends React.Component {
         <div className="col">
           <Total
             options={this.props.options}
-            costs={this.getPriceList()}
+            costs={priceList}
+            baseCost={priceList.baseCost}
           />
         </div>
       </div>

@@ -24,7 +24,7 @@ class Total extends React.Component {
    * @return {Number} The sandwich total
    */
   calculateTotal() {
-    let total = 0;
+    let total = this.props.baseCost;
 
     Object.keys(this.props.options).forEach(key => {
       if (this.state.fieldValues[key]) {
@@ -178,7 +178,10 @@ class Total extends React.Component {
 
 Total.propTypes = {
   options: PropTypes.object.isRequired,
-  costs: PropTypes.object.isRequired
+  costs: PropTypes.object.isRequired,
+  baseCost: PropTypes.number,
 };
+
+Total.defaultProps = { baseCost: 0 };
 
 export default Total;
