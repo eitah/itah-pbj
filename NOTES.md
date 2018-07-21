@@ -21,3 +21,5 @@ I'd suggest de-structuring syntax on things from props or state as I've done in 
 
 4. Is there anything else you think we should know?
 Your test runner doesn't seem to be watching changes when invoked with `test:watch` (I'm on a mac with node 9.4.0). We use a similar setup at work for my react project. For us it was a conflict with our test babel settings.
+
+What's the difference between INSTRUCTIONS.md in PBJ and INSTRUCTIONS.md in design? I recognize that the design is not coding but that confuses me.
