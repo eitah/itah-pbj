@@ -24,14 +24,16 @@ class Total extends React.Component {
    * @return {Number} The sandwich total
    */
   calculateTotal() {
-    let total = this.props.baseCost;
+    const { baseCost, options, costs } = this.props;
+    const { fieldValues } = this.state;
+    let total = baseCost;
 
     Object.keys(this.props.options).forEach(key => {
       if (this.state.fieldValues[key]) {
-        const cost = this.props.costs[key] || 0;
-        const fieldValue = this.state.fieldValues[key] || 1;
+        const cost = costs[key] || 0;
+        const fieldValue = fieldValues[key] || 1;
 
-        const option = this.props.options[key];
+        const option = options[key];
         const type = option.type;
         switch (type) {
           case 'subtotal':
